@@ -2,9 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    // ROOM
-    alias(libs.plugins.kotlin.ksp)
-    alias(libs.plugins.google.gms.google.services)
+
 }
 
 android {
@@ -43,23 +41,7 @@ android {
 }
 
 dependencies {
-
-    // ROOM
-    implementation(libs.androidx.room.runtime)
-    implementation(libs.androidx.room.ktx)
-    implementation(libs.cronet.embedded)
-    implementation(libs.generativeai)
-    implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(libs.translate)
-    implementation(libs.androidx.runtime.livedata)
-    implementation(libs.play.services.maps)
-    implementation(libs.maps)
-    implementation(libs.protolite.well.known.types)
-    implementation(libs.firebase.firestore)
-    ksp(libs.androidx.room.compiler)
-
-    // ViewModel
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    
     implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization)
@@ -78,28 +60,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation(libs.androidx.datastore.preferences)
-
-
-    // Api
-    implementation(libs.moshi)
-    implementation(libs.retrofit)
-    implementation (libs.converterMoshi)
-
     implementation(libs.coil.compose)
-    implementation(libs.coil.network.okhttp)
 
-    implementation(libs.logging.interceptor)
-    //Location
-    implementation(libs.play.services.location)
-
-    implementation(libs.androidx.work.runtime.ktx)
-    // Import the BoM for the Firebase platform
-    implementation (platform(libs.firebase.bom))
-
-    // Declare the dependencies for the desired Firebase products without specifying versions
-    // For example, declare the dependencies for Firebase Authentication and Cloud Firestore
-    implementation( libs.firebase.auth)
-    implementation(libs.firebase.auth.ktx)
 }

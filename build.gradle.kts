@@ -4,8 +4,4 @@ plugins {
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.compose) apply false
 
-    // ROOM
-    alias(libs.plugins.kotlin.ksp) apply false
-    alias(libs.plugins.jetbrains.kotlin.serialization) apply false
-    alias(libs.plugins.google.gms.google.services) apply false
 }

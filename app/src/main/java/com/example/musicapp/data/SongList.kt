@@ -31,7 +31,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.res.painterResource
-import com.example.a04_08projektwoche02.R
+import de.syntax_institut.syntaxfitness.R
 
 
 @Serializable
